@@ -280,24 +280,57 @@ p
     }
 }
 @media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
     body {
         background: white !important;
+        margin: 0;
+        padding: 0;
     }
 
     .container {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
+        width: 1000px;
+        min-height: 0;
+        margin: 0 auto;
         box-shadow: none;
-        transform: scale(0.95);
-        transform-origin: top;
+        transform: scale(0.78);
+        transform-origin: top center;
     }
 
-    .left-side,
-    .right-side,
-    .about,
+    .left-side {
+        padding: 25px;
+    }
+
+    .right-side {
+        padding: 25px;
+    }
+
+    .about {
+        margin-bottom: 18px;
+    }
+
+    .profileText {
+        padding-bottom: 15px;
+    }
+
+    .profileText .imgBx {
+        width: 150px;
+        height: 150px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1.4em;
+    }
+
     .box {
-        break-inside: avoid;
-        page-break-inside: avoid;
+        margin: 10px 0;
+    }
+
+    .contactInfo {
+        padding-top: 20px;
     }
 }
