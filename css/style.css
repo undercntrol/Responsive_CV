@@ -279,4 +279,26 @@ p
         margin: 10px;
     }
 }
+@media print {
+    body {
+        background: white !important;
+    }
 
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .left-side,
+    .right-side {
+        break-inside: avoid;
+    }
+
+    .about,
+    .box {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
